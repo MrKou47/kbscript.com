@@ -1,5 +1,2 @@
-<h1 align="center">
-  kbscript
-</h1>
-
+# kbscript
 Personal website built by gatsby, deployed by ZEIT.
