@@ -36,7 +36,7 @@ function add(num1,num2){
 ```
  
 3.利用`Function`构造函数
-```js
+```javascript {numberLines: true}
 var fn = new Function("num1","num2","return num1+num2"); 
 ```
 Function这种创建函数的方式**不推荐**使用，因为这样会在解释器读取到此行代码时解析两次，第一次正常解析代码，第二次解析构造函数的参数。

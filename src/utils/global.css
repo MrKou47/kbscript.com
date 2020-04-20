@@ -1,0 +1,30 @@
+/* .gatsby-highlight {
+  background: e.colors.code.bg;
+  color: e.colors.text;
+  position: relative;
+  WebkitOverflowScrolling: touch
+}
+
+.gatsby-highlight pre code {
+  display: block;
+  font-size: 100%;
+  lineHeight: 1.5;
+  float: left;
+  minWidth: 100%;
+  padding: 0  + e.space[6]
+}
+
+.gatsby-highlight-code-line {
+  background: e.colors.code.lineHighlightBackground;
+  marginLeft: - + e.space[6];
+  marginRight: - + e.space[6];
+  paddingLeft: e.space[5];
+  paddingRight: e.space[6];
+  borderLeft: e.space[1] +  solid  + e.colors.code.lineHighlightBorder;
+  display: block
+}
+
+.gatsby-highlight pre::-webkit-scrollbar {
+  width: e.space[2];
+  height: e.space[2]
+} */

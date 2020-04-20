@@ -4,15 +4,16 @@ module.exports = {
 
     author: {
       name: `mrkou47`,
-      summary: `who lives and works in China useful things.`,
+      summary: ` `,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://kbscript.com/`,
     social: {
       github: `https://github.com/mrkou47`,
     },
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,7 +36,14 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
+              linkImagesToOriginal: false // point!
             },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // point!
+            options: {
+              //...
+            }
           },
           {
             resolve: `gatsby-remark-responsive-iframe`,
@@ -43,7 +51,19 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: 'nice',
+              // Customize the prompt used in shell output
+              // Values below are default
+              prompt: {
+                user: "kbscript",
+                host: "home",
+                global: true,
+              },
+            }
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -61,8 +81,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `kbscript.com`,
+        short_name: `kbscript`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

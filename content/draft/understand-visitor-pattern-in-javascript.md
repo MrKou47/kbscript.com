@@ -41,78 +41,78 @@ description: '最近在学习如何写一个 *babel-plugin* 的时候，发现 b
   在接下来的栗子中，我们创建三个员工，每一个员工都将获得10%的涨薪和2天的额外假期。我们使用访问者模式来实现此功能。
   
 ```js
- var Employee = function (name, salary, vacation) {
-    var self = this;
-        
-    this.accept = function (visitor) {
-        visitor.visit(self);
-    };
- 
-    this.getName = function () {
-        return name;
-    };
- 
-    this.getSalary = function () {
-        return salary;
-    };
- 
-    this.setSalary = function (sal) {
-        salary = sal;
-    };
- 
-    this.getVacation = function () {
-        return vacation;
-    };
- 
-    this.setVacation = function (vac) {
-        vacation = vac;
-    };
+var Employee = function (name, salary, vacation) {
+  var self = this;
+
+  this.accept = function (visitor) {
+    visitor.visit(self);
+  };
+
+  this.getName = function () {
+    return name;
+  };
+
+  this.getSalary = function () {
+    return salary;
+  };
+
+  this.setSalary = function (sal) {
+    salary = sal;
+  };
+
+  this.getVacation = function () {
+    return vacation;
+  };
+
+  this.setVacation = function (vac) {
+    vacation = vac;
+  };
 };
- 
+
 var ExtraSalary = function () {
-    this.visit = function (emp) {
-        emp.setSalary(emp.getSalary() * 1.1);
-    };
+  this.visit = function (emp) {
+    emp.setSalary(emp.getSalary() * 1.1);
+  };
 };
- 
+
 var ExtraVacation = function () {
-    this.visit = function (emp) {
-        emp.setVacation(emp.getVacation() + 2);
-    };
+  this.visit = function (emp) {
+    emp.setVacation(emp.getVacation() + 2);
+  };
 };
- 
+
 // log helper
- 
-var log = (function() {
-    var log = "";
- 
-    return {
-        add: function(msg) { log += msg + "\n"; },
-        show: function() { alert(log); log = ""; }
-    }
+
+var log = (function () {
+  var log = "";
+
+  return {
+    add: function (msg) { log += msg + "\n"; },
+    show: function () { alert(log); log = ""; }
+  }
 })();
- 
+
 function run() {
-        
-    var employees = [
-        new Employee("John", 10000, 10),
-        new Employee("Mary", 20000, 21),
-        new Employee("Boss", 250000, 51)
-    ];
- 
-    var visitorSalary = new ExtraSalary();
-    var visitorVacation = new ExtraVacation();
-        
-    for (var i = 0, len = employees.length; i < len; i++) {
-        var emp = employees[i];
-            
-        emp.accept(visitorSalary);
-        emp.accept(visitorVacation);
-        log.add(emp.getName() + ": $" + emp.getSalary() +
-            " and " + emp.getVacation() + " vacation days");
-    }
- 
-    log.show();
+
+  var employees = [
+    new Employee("John", 10000, 10),
+    new Employee("Mary", 20000, 21),
+    new Employee("Boss", 250000, 51)
+  ];
+
+  var visitorSalary = new ExtraSalary();
+  var visitorVacation = new ExtraVacation();
+
+  for (var i = 0, len = employees.length; i < len; i++) {
+    var emp = employees[i];
+
+    emp.accept(visitorSalary);
+    emp.accept(visitorVacation);
+    log.add(emp.getName() + ": $" + emp.getSalary() +
+      " and " + emp.getVacation() + " vacation days");
+  }
+
+  log.show();
 }
 ```
 

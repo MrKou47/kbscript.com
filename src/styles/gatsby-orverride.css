@@ -1,0 +1,69 @@
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+ .gatsby-highlight {
+  position: relative;
+  border-radius: 0.3em;
+  margin: 0.5em 0 1.5rem;
+  padding: 1.5rem 1em;
+  overflow: auto;
+  font-size: 13.5px;
+  background-color: #fdfaf6;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+/* set scroll bar */
+.gatsby-highlight::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+}
+
+.gatsby-highlight::-webkit-scrollbar-thumb {
+  background: #f3d1c7;
+}
+
+.gatsby-highlight::-webkit-scrollbar-track {
+  background: #faede6;
+}
+
+/* highlight multi line code in the code block */
+.gatsby-highlight-code-line {
+  background-color: #f4f4f4;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #8ec6c5;
+  text-shadow: none;
+}
+
+.gatsby-highlight-code-line .token.operator {
+  background-color: transparent;
+}
+
+/* override bash code style */
+.command-line-prompt {
+  margin-right: 0;
+  border: none;
+}
+
+code.language-text {
+  background-color: #fbf2e9;
+}

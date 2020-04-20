@@ -51,13 +51,14 @@ const Bio = () => {
           marginBottom: 0,
           minWidth: 50,
           borderRadius: `100%`,
+          border: '1px solid #f4f4f4',
         }}
         imgStyle={{
           borderRadius: `50%`,
         }}
       />
       <div>
-        <span>Written by <strong>{author.name}</strong> {author.summary}</span>
+        <span>Personal blog by <strong>{author.name}</strong> {author.summary}</span>
         <div>
           You could follow him on <a href={social.github}>Github</a>
         </div>

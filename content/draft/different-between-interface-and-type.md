@@ -30,8 +30,8 @@ type Child = {
 
 A: 在官方文档中我们可以看到: 
 
-> Unlike an interface declaration, which always introduces a named object type, a type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.
-不同于 interface 只能定义对象类型， type 声明的方式可以定义组合类型，交叉类型，原始类型。
+> Unlike an interface declaration, which always introduces a named object type, a type alias declaration can introduce a name for any kind of type, including primitive, union, and intersection types.  
+> 不同于 interface 只能定义对象类型， type 声明的方式可以定义组合类型，交叉类型，原始类型。
 
 
 但如果用 `type alias` 声明的方式，会导致一些功能的缺失：

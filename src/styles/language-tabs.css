@@ -1,0 +1,60 @@
+.gatsby-highlight pre[class*="language-"]::before {
+  color: #232129;
+  font-size: 0.75rem;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: 0.075em;
+  line-height: 1;
+  position: absolute;
+  left: 1.5rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0px;
+  border-radius: 0px 0px 4px 4px;
+  padding: 0.25rem 0.5rem;
+  text-shadow: none;
+}
+
+.gatsby-highlight pre[class="language-javascript"]::before,
+.gatsby-highlight pre[class="language-js"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+
+.gatsby-highlight pre[class="language-html"]::before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-typescript"]::before,
+.gatsby-highlight pre[class="language-ts"]::before {
+  content: "ts";
+  background: #187abf;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-css"]::before {
+  content: "css";
+  background: #ff9800;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-java"]::before {
+  content: "java";
+  background: #ec2025;
+  color: white;
+}
+
+.gatsby-highlight pre[class="language-text"]::before {
+  content: "text";
+  background: white;
+  color: black;
+}
+
+.gatsby-highlight pre[class="language-bash"]::before,
+.gatsby-highlight pre[class="language-sh"]::before {
+  content: "bash";
+  background: #aaa;
+  color: white;
+}

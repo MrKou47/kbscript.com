@@ -28,9 +28,9 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <small style={{ color: '#818181'}}>{node.frontmatter.date}</small>
             </header>
-            <section>
+            <section style={{ color: '#818181'}}>
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,

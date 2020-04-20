@@ -5,6 +5,7 @@ categories: 技术
 tags: 
  - 数据结构
  - javascript
+description: '冒泡排序，插入排序与选择排序。'
 ---
 ## 利用JS实现数据排序
 
@@ -25,20 +26,20 @@ tags:
 
 程序如下：
 
-```js
-    var arr = [1,5,3,8,2];
-    k = arr.length
-    while( k>0 ) {
-        for(var i=0;i<arr.length;i++) {
-            var num;
-            if( arr[i]>arr[i+1] ){
-                num = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = num;
-            }
+```javascript{numberLines: true}
+var arr = [1,5,3,8,2];
+k = arr.length
+while( k>0 ) {
+    for(var i=0;i<arr.length;i++) {
+        var num;
+        if( arr[i]>arr[i+1] ){
+            num = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = num;
         }
-        k--;
     }
+    k--;
+}
 ```
 
 ### 2、插入排序

@@ -4,7 +4,7 @@ date: 2018-03-27 20:19:41
 tags:
  - babel
  - 编译相关
-description: ' '
+description: 'Dynamic import相对于 static import提供了一种新的 function-lick 的形式来实现 import。'
 ---
 
 ## 前言
