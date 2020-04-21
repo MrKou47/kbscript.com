@@ -67,3 +67,13 @@
 code.language-text {
   background-color: #fbf2e9;
 }
+
+blockquote {
+  font-size: 1rem;
+  transition: all .5s;
+}
+
+blockquote:hover {
+  border-left: 0.32813rem solid #8a5bb3;
+  /* border-left: 0.32813rem solid rgba(89, 12, 96, 0.9); */
+}

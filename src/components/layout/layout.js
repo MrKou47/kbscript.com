@@ -1,7 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from "../../utils/typography"
+
+import './layout.module.scss';
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -59,9 +61,9 @@ const Layout = ({ location, title, children }) => {
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
+        <span>© {new Date().getFullYear()}, Built with</span>
         <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a style={{ color: 'black' }} href="https://zeit.co/">ZEIT ▲</a>
       </footer>
     </div>
   )
