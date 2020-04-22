@@ -4,12 +4,12 @@ date: 2018-03-27 20:19:41
 tags:
  - babel
  - 编译相关
-description: 'Dynamic import相对于 static import提供了一种新的 function-lick 的形式来实现 import。'
+description: 'Dynamic import相对于 static import提供了一种新的 function-like 的形式来实现 import。'
 ---
 
 ## 前言
 
-Dynamic import相对于 static import提供了一种新的 *function-lick* 的形式来实现 *import*。这篇文章通过介绍这两种 *import* 的方式来解释两者的差异，同时也根据 *babel* 来学习一下 babel 对于此新语法的处理。
+Dynamic import相对于 static import提供了一种新的 *function-like* 的形式来实现 *import*。这篇文章通过介绍这两种 *import* 的方式来解释两者的差异，同时也根据 *babel* 来学习一下 babel 对于此新语法的处理。
 
 ## Update 2019-06-26
 
