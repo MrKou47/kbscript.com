@@ -60,7 +60,9 @@ const Bio = () => {
       <div>
         <span>Personal blog by <strong>{author.name}</strong> {author.summary}</span>
         <div>
-          You could follow him on <a href={social.github}>Github</a>
+          You could follow him on
+          <a href={social.github}>Github</a>
+          <a href={social.twitter}>Twitter</a>
         </div>
       </div>
     </div>

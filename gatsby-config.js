@@ -10,6 +10,7 @@ module.exports = {
     siteUrl: `https://kbscript.com/`,
     social: {
       github: `https://github.com/mrkou47`,
+      twitter: `http://twitter.com/mrkou47`,
     },
   },
   plugins: [
