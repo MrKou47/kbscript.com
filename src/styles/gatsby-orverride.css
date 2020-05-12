@@ -77,3 +77,7 @@ blockquote:hover {
   border-left: 0.32813rem solid #8a5bb3;
   /* border-left: 0.32813rem solid rgba(89, 12, 96, 0.9); */
 }
+
+ul {
+  margin-left: 2rem;
+}

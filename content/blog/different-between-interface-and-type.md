@@ -6,13 +6,12 @@ tags:
  - typescript
 ---
 
-最近做项目用的是 `ant design`, 正好也是用 `ts` 写的, 就顺便看了看源码。结果发现有些类型声明还用了 `type` 来写(这是什么鬼), 于是赶紧google一下, 搁这里记录一手
-<!-- more -->
-
+最近做项目用的是 `ant design`, 正好也是用 `ts` 写的, 就顺便看了看源码。结果发现有些类型声明还用了 `type` 来写(这是什么鬼), 于是赶紧google一下...
 
 *refer:* [stackoverflow: typescript-interfaces-vs-types][1]
 
 Q: 在 *typescript* 中, 我们定义类型有两种方式： 接口(interface) 和类型别名(type alias)
+
 ```ts
 interface Child {
   name?: string;
@@ -26,6 +25,7 @@ type Child = {
   hobby?: Array<string>;
 }
 ```
+
 这两种定义方式有什么区别？
 
 A: 在官方文档中我们可以看到: 

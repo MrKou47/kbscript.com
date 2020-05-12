@@ -1,6 +1,6 @@
 ---
 title: github+hexo+nodejs搭建个人博客
-date: 2016-04-01 16:08:29
+date: 2016-02-01 16:08:29
 categories: 技术
 tags:
  - hexo
@@ -45,10 +45,7 @@ d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 schacon@mylaptop.local
 ### 2.建立博客库
 
 在github生成一个库，取名为yourname.github.io。
-点击new repository,创建库
-![creat](http://kbscript.com/1.png)
-
-description输入对库的描述，下面选择private，然后点击creat repository。我们的博客空间就创建完成了。
+点击new repository,创建库 description输入对库的描述，下面选择 private，然后点击creat repository。我们的博客空间就创建完成了。
 
 ### 3.安装hexo
 

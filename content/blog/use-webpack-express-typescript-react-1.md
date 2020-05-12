@@ -8,7 +8,7 @@ tags:
  - react
 ---
 
-## 前言
+# 前言
 
 最近公司业务急剧膨胀， 一下子要有三个大后台要开撸..之前的 `jquery` 和 `express` 的搭配已经不能满足需求了ORZ..., 所以就想开始用新的框架来写。对于新框架，老板同志同时还提出了几点要求：  
 
@@ -18,7 +18,7 @@ tags:
 - "回头我把持续集成加上（说的第十遍）"
 - 代码要漂亮， 我们要给歪果仁看  
 
-针对老板提出的这几个问题..我经过几天几夜的深入领会后(天降正义！..我看到你了！...double kill..)，针对每一条都给出了技术选型  
+针对老板提出的这几个问题..我经过几天几夜的深入领会后, 针对每条都给出了技术选型。
   
 - 路由要前端配置 ----------------------        react-router
 - 你这 js 不行啊，还是强类型语言好 ----------  typescript 
@@ -35,10 +35,13 @@ tags:
   同时， 听说 `pm2` 支持 `nodejs` 端的 `es6` 语法了，所以我们这次服务端也使用es6编写。
   再同时， 因为我们的代码包含前后端， 所以我们的目录结构要把服务端和前端代码分开
   
-  > |-src // 前端代码
-    |-server  // 服务端代码
+```shell
+  |-src // 前端代码
+  |-server  // 服务端代码
+```
      
-### 1. 搭建基础的 `express` 框架  
+## 1. 搭建基础的 `express` 框架  
+
 因为 `express` 的 `generator` 只生成es5的代码，所以我们自己来写一个简单的服务端。同时我们的业务也可能要求会有一些页面会由服务端渲染，所以我们的目录结构为:
 ```shell
   |- /server
@@ -83,8 +86,10 @@ app.listen(port, (err) => {
   }
 });
 ```
-tips：windows电脑可以使用 `cross-env` 来实现配置 `NODE_ENV`;
-### 2. 构建前端代码
+> tips：windows电脑可以使用 `cross-env` 来实现配置 `NODE_ENV`;
+
+## 2. 构建前端代码
+
 ```shell
     |- /src
       |- /component # 公共component
@@ -104,7 +109,7 @@ tips：windows电脑可以使用 `cross-env` 来实现配置 `NODE_ENV`;
 ```
 我们先写一个类似于微信小程序demo的首页。我们希望首页能显示用户头像与昵称，有个按钮能控制显示头像与昵称的显示隐藏。所以我们可以创建一个 `Home` 组件，它包含一个子组件 `Avatar` 。  
 
-#### 父组件  
+### 父组件  
 
 ```tsx
 // /container/Home/index.tsx
@@ -156,7 +161,7 @@ class Home extends React.PureComponent<any, HomeState> {
 export default Home;
 ```  
 
-#### 子组件 `Avatar`  
+### 子组件 `Avatar`  
 
 ```tsx
 import * as React from 'react';
@@ -191,7 +196,8 @@ export default Avatar;
 有关使用 [pureComponent][2] 的问题此处不再赘述。
 
 组件编写好，我们开始编写路由: 
-#### 路由配置
+
+### 路由配置
 ```ts
 // src/router/index.ts
 
@@ -206,7 +212,7 @@ export default routes;
 
 ```
 
-#### 总入口文件
+### 总入口文件
 编写总入口文件 `client.tsx` :
 
 ```tsx
@@ -224,7 +230,7 @@ const render = () => {
 
 export default render;
 ```
-#### 总出口文件
+### 总出口文件
 编写总出口文件 `index.js`:
 ```js
 import render from './client.tsx';
