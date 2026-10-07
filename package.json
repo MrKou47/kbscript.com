@@ -8,34 +8,35 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "gatsby": "^2.20.12",
-    "gatsby-image": "^2.3.1",
-    "gatsby-plugin-feed": "^2.4.1",
-    "gatsby-plugin-google-analytics": "^2.2.2",
-    "gatsby-plugin-manifest": "^2.3.3",
-    "gatsby-plugin-offline": "^3.1.2",
-    "gatsby-plugin-react-helmet": "^3.2.1",
-    "gatsby-plugin-sass": "^2.2.3",
-    "gatsby-plugin-sharp": "^2.5.3",
-    "gatsby-plugin-typography": "^2.4.1",
-    "gatsby-remark-copy-linked-files": "^2.2.1",
-    "gatsby-remark-images": "^3.2.1",
-    "gatsby-remark-images-medium-zoom": "^1.5.0",
-    "gatsby-remark-prismjs": "^3.4.1",
-    "gatsby-remark-responsive-iframe": "^2.3.1",
-    "gatsby-remark-smartypants": "^2.2.1",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-remark": "^2.7.1",
-    "gatsby-transformer-sharp": "^2.4.3",
-    "node-sass": "^4.13.1",
-    "prismjs": "^1.19.0",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1",
-    "react-typography": "^0.16.19",
+    "ajv": "^8.20.0",
+    "gatsby": "^5",
+    "gatsby-plugin-feed": "^5",
+    "gatsby-plugin-google-analytics": "^5",
+    "gatsby-plugin-image": "^3",
+    "gatsby-plugin-manifest": "^5",
+    "gatsby-plugin-react-helmet": "^6",
+    "gatsby-plugin-sass": "^6",
+    "gatsby-plugin-sharp": "^5",
+    "gatsby-plugin-typography": "^5",
+    "gatsby-remark-copy-linked-files": "^6",
+    "gatsby-remark-images": "^7",
+    "gatsby-remark-images-medium-zoom": "^1.7.0",
+    "gatsby-remark-prismjs": "^7",
+    "gatsby-remark-responsive-iframe": "^6",
+    "gatsby-remark-smartypants": "^6",
+    "gatsby-source-filesystem": "^5",
+    "gatsby-transformer-remark": "^6",
+    "gatsby-transformer-sharp": "^5",
+    "prismjs": "^1.29.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-typography": "^0.16.23",
+    "sass": "^1.77.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
-    "typography": "^0.16.19",
+    "typography": "^0.16.24",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
@@ -60,7 +61,14 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "resolutions": {
-    "bin-wrapper": "npm:bin-wrapper-china"
+  "engines": {
+    "node": "24.x"
+  },
+  "allowScripts": {
+    "sharp@0.32.6": true,
+    "lmdb@2.5.2": true,
+    "lmdb@2.5.3": true,
+    "msgpackr-extract@3.0.4": true,
+    "@parcel/watcher@2.6.0": true
   }
 }

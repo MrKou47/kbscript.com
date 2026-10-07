@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import styles from './index.module.scss'
+import * as styles from './index.module.scss'
 
 function Nav(props) {
   const { previous, next } = props;
